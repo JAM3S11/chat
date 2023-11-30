@@ -1,0 +1,182 @@
+        /* CSS styles for the chat page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f1f1f1;
+        }
+        
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            height: 100vh;
+            width: 250px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .new-chat {
+            margin-bottom: 20px;
+        }
+        
+        .chatlist {
+            list-style-type: none;
+            padding: 0;
+            width: 100%;
+            margin-top: 1px;
+        }
+        
+        .chatlist li {
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+            cursor: pointer;
+        }
+        
+        .chatlist li:hover {
+            background-color: #f9f9f9;
+        }
+        
+        .new-chat-icon {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            background-color: #fff;
+            border-radius: 50%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+            font-size: 24px;
+            margin-top: 20px;
+        }
+        
+       .content {
+    margin-left: 2px;
+    padding: 20px;
+    background-image: url('pictures/images.JPG');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 200px;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto; /* Add scrollbar */
+}
+.chat-messages {
+    flex-grow: 1;
+}
+
+        
+        .message-container {
+            display: flex;
+            margin-bottom: 10px;
+        }
+        
+        .message-container.sent .message {
+            background-color: #DCF8C6;
+            align-self: flex-end;
+        }
+        
+        .message-container.received .message {
+            background-color: #E8E8E8;
+            align-self: flex-start;
+        }
+        
+        .message {
+            padding: 8px 12px;
+            border-radius: 8px;
+            max-width: 80%;
+        }
+        
+        .message-file {
+            margin-top: 4px;
+        }
+        
+       .message-input-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    position: sticky;
+    bottom: 0;
+    background-color: #fff;
+    padding: 10px;
+}
+        
+        .message-input-container input[type="text"] {
+            flex-grow: 1;
+            padding: 8px;
+            border-radius: 4px;
+            border: none;
+        }
+        
+        .message-input-container button {
+            margin-left: 8px;
+            padding: 8px 12px;
+            border: none;
+            border-radius: 4px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+        
+        .file-input {
+            display: none;
+        }
+        
+        .file-upload-icon {
+            margin-left: 8px;
+            padding: 6px;
+            border-radius: 50%;
+            background-color: #f1f1f1;
+            cursor: pointer;
+        }
+		.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal {
+    width: 300px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.modal h2 {
+    margin-top: 0;
+}
+
+.modal ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.modal li {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+.modal li:hover {
+    background-color: #e9e9e9;
+}
